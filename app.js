@@ -1,5 +1,5 @@
 // Call in installed dependencies
-const express = require('express');
+import express from 'express';
 // set up express app
 const app = express();
 // set up port number
@@ -10,6 +10,4 @@ app.get('/', (request, respond) => {
     message: 'Welcome to Project Support',
   });
 });
-app.listen(port, (request, respond) => {
-  console.log(`Our server is live on ${port}. Yay!`);
-});
+app.listen(port);
